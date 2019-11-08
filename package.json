@@ -1,0 +1,55 @@
+{
+  "name": "@cryptiumtech/qrcode",
+  "version": "0.1.0",
+  "description": "Generate a QRCode image in PNG format",
+  "main": "dist/index.umd.js",
+  "module": "src/index",
+  "scripts": {
+    "clean": "exit 0",
+    "lint": "eslint --fix src/**",
+    "build": "rollup src/index.js --file dist/index.umd.js --format umd --name QRCode",
+    "deps": "dep-check",
+    "pkg": "pkg-check",
+    "start": "exit 0",
+    "test": "mocha ./test/unit/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cryptiumtech/qrcode-node-js.git"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "keywords": [
+    "cryptiumtech",
+    "sdk",
+    "qrcode"
+  ],
+  "author": {
+    "name": "Cryptium",
+    "email": "someone@cryptium.org",
+    "url": "https://github.com/cryptiumtech"
+  },
+  "bugs": {
+    "url": "https://github.com/cryptiumtech/qrcode-node-js/issues"
+  },
+  "homepage": "https://github.com/cryptiumtech/qrcode-node-js#readme",
+  "license": "MIT",
+  "dependencies": {
+    "@zxing/library": "^0.15.2",
+    "pngjs": "^3.4.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@jbuhacoff/commitlint-config": "^1.0.0",
+    "@jbuhacoff/commitlint-config-type-enum": "^1.0.0",
+    "chai": "^4.2.0",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-mocha": "^6.2.0",
+    "husky": "^3.0.8",
+    "mocha": "^6.2.2",
+    "rollup": "^1.25.2"
+  }
+}

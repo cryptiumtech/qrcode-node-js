@@ -1,0 +1,12 @@
+# developer configuration
+.eslintrc.js
+.gitignore
+.npmignore
+
+# unit tests
+test
+
+# temporary files
+~*
+report
+
